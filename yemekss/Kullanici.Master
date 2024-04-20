@@ -31,7 +31,7 @@
                 <tr>
                     <td><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
                     <td><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
-                    <td class="auto-style3"><a href="TarifOner.aspx">TARİF ÖNER</a></td>
+                    <td class="auto-style3"><a href="Tarifoner.aspx">TARİF ÖNER</a></td>
                     <td><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
                     <td class="auto-style2"><a href="iletisim.aspx">İLETİŞİM</a></td>
                 </tr>
