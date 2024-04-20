@@ -19,5 +19,8 @@ namespace yemekss
             DataList1.DataSource = oku;
             DataList1.DataBind();
         }
+
+     
+        
     }
 }
