@@ -38,7 +38,18 @@
             </table>
             </div>
          <div style="margin-left: 300px; width: 700px; height: 300px;">
-          <div style="width: 200px; height: 100px; float: left; background-color: #8EA7E9; margin-left: 0px;"></div>
+          <div style="width: 200px; height: auto; float: left; background-color: #8EA7E9; margin-left: 0px; text-align: left; font-size: large; font-weight: 700;">
+              Kategoriler
+              <br />
+              <br />
+              <asp:DataList ID="DataList1" runat="server">
+                  <ItemTemplate>
+                      <asp:Label ID="Label1" runat="server" style="font-size: small" Text='<%# Eval("kategoriad") %>' BorderColor="White" BorderStyle="Solid" BorderWidth="2px"></asp:Label>
+                  </ItemTemplate>
+              </asp:DataList>
+              <br />
+              <br />
+             </div>
           <div style="width: 450px; height: 300px; float: left; background-color: #8EA7E9;  margin-left: 50px">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     <p>&nbsp;</p>
