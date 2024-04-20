@@ -25,7 +25,11 @@
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style7" style="background-color: #E5E0FF">
-                        <asp:Label ID="Label3" runat="server" style="font-weight: 700; font-size: x-large" Text='<%# Eval("yemekad") %>'></asp:Label>
+
+
+                    <a href="YemekDetay.aspx?yemekid=<%# Eval("yemekid") %>"><asp:Label ID="Label3" runat="server" style="font-weight: 700; font-size: x-large" Text='<%# Eval("yemekad") %>'></asp:Label>
+                   </a>
+                        
                     </td>
                 </tr>
                 <tr>
