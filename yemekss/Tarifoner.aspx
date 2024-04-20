@@ -56,7 +56,7 @@
         <tr>
             <td class="auto-style8">Mail Adresi:</td>
             <td class="auto-style9">
-                <asp:TextBox ID="TxtMailAdresi" runat="server" Width="250px"></asp:TextBox>
+                <asp:TextBox ID="TxtMailAdresi" runat="server" Width="250px" OnTextChanged="TxtMailAdresi_TextChanged" TextMode="Email"></asp:TextBox>
             </td>
         </tr>
         <tr>

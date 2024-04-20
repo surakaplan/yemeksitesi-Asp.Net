@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 
 <html>
+<link href="StyleSheet1.css" rel="stylesheet" />
 <head runat="server">
    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -10,15 +11,26 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
-            background-color: #FFFFFF;
+            background-color: #0766AD;
         }
 
         .auto-style2 {
-            width: 100px;
+            
+             text-align: center;
+            font-weight: bold;
+             background-color: #0766AD;
         }
         .auto-style3 {
             width: 135px;
         }
+         .auto-style4 {
+            font-size: large;
+        }
+        .auto-style5 {
+            width: 450px;
+            float: left;
+            height: auto;
+        }   
     </style>
 </head>
 <body>
@@ -26,7 +38,7 @@
          <div style="height: 150px; width: 700px; margin-left: 300px; background-color:  #8EA7E9;">
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp</div>
-        <div style="margin-left: 300px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">
+        <div style="margin-left: 300px; margin-bottom:20px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">
             <table class="auto-style1">
                 <tr>
                     <td><a href="AnaSayfa.aspx">ANA SAYFA</a></td>

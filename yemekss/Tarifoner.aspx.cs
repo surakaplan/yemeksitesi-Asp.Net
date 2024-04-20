@@ -13,5 +13,20 @@ namespace yemekss
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TxtMailAdresi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
