@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="yemekss.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #FFFFFF;
+        }
+
+        .auto-style2 {
+            width: 100px;
+        }
+        .auto-style3 {
+            width: 135px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div style="height: 150px; width: 700px; margin-left: 300px; background-color: cadetblue;">
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp</div>
+        <div style="margin-left: 300px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">
+            <table class="auto-style1">
+                <tr>
+                    <td><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
+                    <td><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
+                    <td class="auto-style3"><a href="TarifOner.aspx">TARİF ÖNER</a></td>
+                    <td><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                    <td class="auto-style2"><a href="iletisim.aspx">İLETİŞİM</a></td>
+                </tr>
+            </table>
+            </div>
+         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp</div>
+         <div style="margin-left: 300px; width: 200px; height: 200px; background-color: mediumpurple;">
+         <div style="margin-left: 250px; width: 350px; height: 450px; background-color:mediumpurple;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>&nbsp;</p>
+            </asp:ContentPlaceHolder>
+             </div>
+           </div>
+
+    </form>
+</body>
+</html>
