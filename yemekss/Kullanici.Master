@@ -13,7 +13,10 @@
             width: 100%;
             background-color: #0766AD;
         }
-
+        .auto-style1:hover {
+            color: #E5E0FF;
+    
+}
         .auto-style2 {
             
              text-align: center;
@@ -26,6 +29,14 @@
          .auto-style4 {
             font-size: large;
         }
+        .auto-style5 {
+            color: #E5E0FF;
+            
+        }
+        .auto-style5:hover {
+        color: #0766AD;
+    
+}
         </style>
 </head>
 <body>
@@ -52,10 +63,10 @@
               <asp:DataList ID="DataList1" runat="server" Height="198px" Width="200px">
                   <ItemTemplate>
                       <div style="border: thin solid #0766AD">
-                          <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriad") %>' style="font-size: medium"></asp:Label>
-                          &nbsp;<span class="auto-style4"</span="">(
-                          <asp:Label ID="Label2" runat="server" Text='<%# Eval("kategoriadet") %>' style="font-size: medium"></asp:Label>
-                            )</span></div></div>
+                         <a href="KategoriDetay.aspx?kategoriid=<%# Eval("kategoriid")%>">  <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriad") %>' style="font-size: medium" CssClass="auto-style5"></asp:Label>
+                         <span class="auto-style4"</span=""></a>
+                          </span </span="" class="auto-style4">(<asp:Label ID="Label2" runat="server" style="font-size: medium" Text='<%# Eval("kategoriadet") %>'></asp:Label>
+                          )</div></div>
                   </ItemTemplate>
               </asp:DataList>
               <br />
