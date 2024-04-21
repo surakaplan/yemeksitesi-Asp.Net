@@ -15,45 +15,66 @@
     .auto-style9 {
         border: 2px solid #456879;
         border-radius: 10px;
-    }
+            color: #07090D;
+        }
+            .auto-style10 {
+            width: 172px;
+            font-size: x-large;
+            color: #07090D;
+        }
+        .auto-style11 {
+            border: 2px solid #456879;
+            border-radius: 10px;
+            height: 22px;
+            width: 230px;
+            color: #07090D;
+        }
+        .auto-style12 {
+            color: #07090D;
+        }
+        .auto-style13 {
+            width: 172px;
+            font-size: large;
+            color: #07090D;
+        }
             </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <table class="auto-style6">
     <tr>
-        <td class="auto-style7">MESAJ PANELİ</td>
-        <td>&nbsp;</td>
+        <td class="auto-style13">MESAJ PANELİ</td>
+        <td class="auto-style12">&nbsp;</td>
     </tr>
     <tr>
-        <td class="auto-style7">&nbsp;</td>
-        <td>&nbsp;</td>
+        <td class="auto-style10">&nbsp;</td>
+        <td class="auto-style12">&nbsp;</td>
     </tr>
     <tr>
-        <td class="auto-style7">Ad Soyad:</td>
+        <td class="auto-style13">Ad Soyad:</td>
         <td class="auto-style8">
-            <asp:TextBox ID="TextBox1" runat="server" CssClass="tb5" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style11" Width="250px"></asp:TextBox>
         </td>
     </tr>
     <tr>
-        <td class="auto-style7">Mail Adresiniz:</td>
+        <td class="auto-style13">Mail Adresiniz:</td>
         <td>
-            <asp:TextBox ID="TextBox2" runat="server" CssClass="tb5" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style11" Width="250px"></asp:TextBox>
         </td>
     </tr>
     <tr>
-        <td class="auto-style7">Konu:</td>
+        <td class="auto-style13">Konu:</td>
         <td>
-            <asp:TextBox ID="TextBox3" runat="server" CssClass="tb5" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style11" Width="250px"></asp:TextBox>
         </td>
     </tr>
     <tr>
-        <td class="auto-style7">Mesaj:</td>
+        <td class="auto-style13">Mesaj:</td>
         <td>
             <asp:TextBox ID="TextBox4" runat="server" CssClass="auto-style9" Height="150px" TextMode="MultiLine" Width="250px"></asp:TextBox>
         </td>
     </tr>
     <tr>
-        <td class="auto-style7">&nbsp;</td>
+        <td class="auto-style10">&nbsp;</td>
         <td>
             <asp:Button ID="Button1" runat="server" Text="GÖNDER" Width="172px" CssClass="testbutton" OnClick="Button1_Click" />
         </td>

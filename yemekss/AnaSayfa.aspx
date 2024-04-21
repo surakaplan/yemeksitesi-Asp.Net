@@ -15,11 +15,23 @@
         .auto-style9 {
             width: 450px;
             height: 27px;
-            color:black;
+            color:#07090D;
         }
-    .auto-style10 {
-        width: 101%;
-    }
+        .auto-style11 {
+            width: 450px;
+            font-size: x-large;
+            color: #07090D;
+        }
+        .auto-style12 {
+            font-size: medium;
+            color: #07090d;
+        }
+        .auto-style13 {
+            width: 450px;
+            font-size: x-large;
+            color: #07090D;
+            height: 51px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -37,15 +49,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7"><strong>Malzemeler: </strong>
+                    <td class="auto-style11"><strong><span class="auto-style4">Malzemeler: </span> </strong>
                         <br />
-                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("yemekmalzeme") %>'></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("yemekmalzeme") %>' CssClass="auto-style12"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7"><strong>Tarif: </strong>
+                    <td class="auto-style13"><strong><span class="auto-style4">Tarif: </span> </strong>
                         <br />
-                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("yemektarif") %>'></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("yemektarif") %>' CssClass="auto-style12"></asp:Label>
                     </td>
                 </tr>
                 <tr>

@@ -34,7 +34,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     &nbsp;<asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Label" style="font-size: 36pt; color: #FFF2F2"></asp:Label>
     <br />
-          <div style="background-color: #8EA7E9;  " class="auto-style11">
+          <div style="background-color: #96B6C5;  " class="auto-style11">
                 <p class="auto-style10">
                     <asp:DataList ID="DataList2" runat="server" CssClass="auto-style9" Height="200px" Width="340px">
                         <ItemTemplate>

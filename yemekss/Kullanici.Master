@@ -11,7 +11,7 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
-            background-color: #0766AD;
+            background-color: #07090d;
         }
         .auto-style1:hover {
             color: #E5E0FF;
@@ -21,15 +21,12 @@
             
              text-align: center;
             font-weight: bold;
-             background-color: #0766AD;
+             background-color: #07090d;
         }
         .auto-style3 {
             width: 135px;
         }
-         .auto-style4 {
-            font-size: large;
-        }
-        .auto-style5 {
+         .auto-style5 {
             color: #E5E0FF;
             
         }
@@ -37,15 +34,21 @@
         color: #0766AD;
     
 }
+        .auto-style6 {
+            color: #96B6C5;
+        }
+        .auto-style7 {
+            font-size: x-large;
+        }
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
-         <div style="height: 170px; width: 700px; margin-left: 550px; background-color:  #8EA7E9;">
+         <div style="height: 170px; width: 700px; margin-left: 550px; background-color:  #07090d;">
              <asp:Image ID="Image1" runat="server" Height="170px" ImageUrl="~/resimler/h.jpeg" Width="700px" />
         </div>
         <div style="margin-left: 550px; width: 700px; height: 20px;">&nbsp</div>
-        <div style="margin-left: 550px; margin-bottom:20px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">
+        <div style="margin-left: 550px; margin-bottom:20px; width: 700px; height: 25px; background-color: #07090d; text-align: center; font-weight: 700;">
             <table class="auto-style1">
                 <tr>
                     <td><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
@@ -57,25 +60,27 @@
             </table>
             </div>
          <div style="margin-left: 550px; width: 700px; height: 300px;">
-          <div style="width: 200px; height: auto; float: left; background-color: #8EA7E9; margin-left: 0px; text-align: left; font-size: large; font-weight: 700;">
-              Kategoriler
+          <div style="width: 200px; height: auto; float: left; background-color:#07090d; margin-left: 0px; text-align: left; font-size: large; font-weight: 700;">
+              <span class="auto-style7"><span class="auto-style6">Kategoriler
+              </span></span>
               <br />
               <br />
               <asp:DataList ID="DataList1" runat="server" Height="198px" Width="200px">
                   <ItemTemplate>
-                      <div style="border: thin solid #0766AD">
+                      <div style="border: thin solid #96B6C5">
                          <a href="KategoriDetay.aspx?kategoriid=<%# Eval("kategoriid")%>">  <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriad") %>' style="font-size: medium" CssClass="auto-style5"></asp:Label>
-                         <span class="auto-style4"</span=""></a>
-                          </span </span="" class="auto-style4">(<asp:Label ID="Label2" runat="server" style="font-size: medium" Text='<%# Eval("kategoriadet") %>'></asp:Label>
-                          )</div></div>
+                          </a>
+                          <span class="auto-style5">(
+                          <asp:Label ID="Label2" runat="server" CssClass="auto-style5" style="font-size: medium" Text='<%# Eval("kategoriadet") %>'></asp:Label>
+                          )</span></div></div>
                   </ItemTemplate>
               </asp:DataList>
               <br />
               <br />
              </div>
-          <div style="width: 450px; height: auto; float: left; background-color: #8EA7E9;  margin-left: 50px">
+          <div style="width: 450px; height: auto; float: left; background-color: #96B6CB;  margin-left: 50px">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    <p>a</p>
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
             </asp:ContentPlaceHolder>
              </div>

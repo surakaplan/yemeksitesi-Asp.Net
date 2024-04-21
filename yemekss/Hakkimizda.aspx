@@ -13,10 +13,10 @@
         .auto-style7 {
             width: 100%;
         }
-        .auto-style10 {
-            text-align: right;
+        .auto-style8 {
+            color: #07090D;
         }
-        .auto-style11 {
+        .auto-style9 {
             text-align: center;
         }
 
@@ -25,14 +25,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <span KATEGORİLER</span>
                     <p class="auto-style5">
-                        <strong>&nbsp;<span class="auto-style6">Hakkımızda</span></strong></p>
+                        <strong>&nbsp;<span class="auto-style8">HAKKIMIZDA</span></strong></p>
                     <span class="auto-style4"KATEGORİLER</span>
+                    <div class="auto-style9">
                     <asp:DataList ID="DataList2" runat="server" Width="447px">
                         <ItemTemplate>
                             <asp:Label ID="Label3" runat="server" Text='<%# Eval("metin") %>'></asp:Label>
                             <br />
                         </ItemTemplate>
     </asp:DataList>
+
+       </div>
 
        </span>
        <table class="auto-style7">
