@@ -41,7 +41,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-         <div style="height: 150px; width: 700px; margin-left: 550px; background-color:  #8EA7E9;">
+         <div style="height: 170px; width: 700px; margin-left: 550px; background-color:  #8EA7E9;">
+             <asp:Image ID="Image1" runat="server" Height="170px" ImageUrl="~/resimler/h.jpeg" Width="700px" />
         </div>
         <div style="margin-left: 550px; width: 700px; height: 20px;">&nbsp</div>
         <div style="margin-left: 550px; margin-bottom:20px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">

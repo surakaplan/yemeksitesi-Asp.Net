@@ -73,6 +73,8 @@
     <Content Include="iletisim.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="resimler\a.jpeg" />
+    <Content Include="resimler\h.jpeg" />
+    <Content Include="resimler\header.png" />
     <Content Include="resimler\makaron.jpeg" />
     <Content Include="StyleSheet2.css" />
     <Content Include="Tarifoner.aspx" />
