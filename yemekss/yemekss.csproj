@@ -71,6 +71,7 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="iletisim.aspx" />
+    <Content Include="resimler\a.jpeg" />
     <Content Include="resimler\makaron.jpeg" />
     <Content Include="StyleSheet2.css" />
     <Content Include="Tarifoner.aspx" />
