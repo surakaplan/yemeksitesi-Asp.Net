@@ -11,7 +11,7 @@ namespace yemekss
 {
 
 
-    public partial class Admin1
+    public partial class Admin2
     {
     }
 }
