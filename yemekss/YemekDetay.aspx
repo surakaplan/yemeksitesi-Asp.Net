@@ -2,9 +2,58 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
+        .auto-style7 {
+            font-size: x-large;
+        }
+        .auto-style8 {
+            font-size: x-small;
+        }
+        .auto-style9 {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .auto-style10 {
+            text-align: left;
+        }
+        .auto-style11 {
+            width: 445px;
+            height: auto;
+            float: left;
+            margin-left: 3px;
+        }
+        .auto-style12 {
+            width: 129px;
+
+        }
+        .auto-style13 {
+            width: 433px;
+        }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Label"></asp:Label>
-</asp:Content>
+    &nbsp;<asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Label" style="font-size: 36pt; color: #FFF2F2"></asp:Label>
+    <br />
+          <div style="background-color: #8EA7E9;  " class="auto-style11">
+                <p class="auto-style10">
+                    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style9" Height="200px" Width="340px">
+                        <ItemTemplate>
+                            <table class="auto-style13">
+                                <tr>
+                                    <td class="auto-style12">
+                                        <asp:Label ID="Label4" runat="server" CssClass="auto-style7" Text='<%# Eval("yorumad") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom-style: inset; border-bottom-width: thin" class="auto-style12">
+                                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("yorumicerik") %>'></asp:Label>
+                                        &nbsp;-
+                                        <asp:Label ID="Label6" runat="server" CssClass="auto-style8" Text='<%# Eval("yorumtarih") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </p>
+             </div>
+           </asp:Content>

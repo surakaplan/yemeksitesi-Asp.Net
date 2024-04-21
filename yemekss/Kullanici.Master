@@ -26,19 +26,14 @@
          .auto-style4 {
             font-size: large;
         }
-        .auto-style5 {
-            width: 450px;
-            float: left;
-            height: auto;
-        }   
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
-         <div style="height: 150px; width: 700px; margin-left: 300px; background-color:  #8EA7E9;">
+         <div style="height: 150px; width: 700px; margin-left: 550px; background-color:  #8EA7E9;">
         </div>
-        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp</div>
-        <div style="margin-left: 300px; margin-bottom:20px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">
+        <div style="margin-left: 550px; width: 700px; height: 20px;">&nbsp</div>
+        <div style="margin-left: 550px; margin-bottom:20px; width: 700px; height: 25px; background-color: cadetblue; text-align: center; font-weight: 700;">
             <table class="auto-style1">
                 <tr>
                     <td><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
@@ -49,7 +44,7 @@
                 </tr>
             </table>
             </div>
-         <div style="margin-left: 300px; width: 700px; height: 300px;">
+         <div style="margin-left: 550px; width: 700px; height: 300px;">
           <div style="width: 200px; height: auto; float: left; background-color: #8EA7E9; margin-left: 0px; text-align: left; font-size: large; font-weight: 700;">
               Kategoriler
               <br />
@@ -68,6 +63,7 @@
              </div>
           <div style="width: 450px; height: auto; float: left; background-color: #8EA7E9;  margin-left: 50px">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>a</p>
                     <p>&nbsp;</p>
             </asp:ContentPlaceHolder>
              </div>
