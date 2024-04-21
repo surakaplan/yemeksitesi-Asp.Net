@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html>
-<link href="StyleSheet1.css" rel="stylesheet" />
+<link href="StyleSheet2.css" rel="stylesheet" />
 <head runat="server">
    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">

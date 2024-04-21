@@ -1,0 +1,37 @@
+﻿a:link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+}
+
+a:hover {
+    font-size: 18px;
+    color: #E5E0FF;
+}
+
+.tb5 {
+    border: 2px solid #456879;
+    border-radius: 10px;
+    height: 22px;
+    width: 230px;
+}
+
+.testbutton {
+    font-family: arial;
+    color: #0766AD;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #0766AD;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #E5E0FF);
+}
+
+    .testbutton:hover {
+        color: #0766AD;
+        background: #0766AD;
+        background: linear-gradient(to top, #E5E0FF, #63B8EE);
+    }
