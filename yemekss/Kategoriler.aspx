@@ -70,7 +70,8 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriad") %>'></asp:Label>
                         </td>
                         <td class="auto-style19">
-                            <asp:Image ID="Image2" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/delete.png" />
+                        <a href="Kategoriler.aspx?kategoriid=<%# Eval("kategoriid") %>&islem=sil"><asp:Image ID="Image2" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/delete.png" />
+                        </a>
                         </td>
                         <td class="auto-style19">
                         <a href="KategoriDuzenle.aspx?kategoriid=<%# Eval("kategoriid") %>"><asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/update.png" />
