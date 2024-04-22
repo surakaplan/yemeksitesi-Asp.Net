@@ -108,13 +108,13 @@
             <tr>
                 <td class="auto-style30">Kategori İkon</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style31"></td>
                 <td class="auto-style32">
-                    <asp:Button ID="Button1" runat="server" Text="Ekle" Width="80px" />
+                    <asp:Button ID="BtnEkle" runat="server" Text="Ekle" Width="80px" OnClick="BtnEkle_Click" />
                 </td>
             </tr>
         </table>
