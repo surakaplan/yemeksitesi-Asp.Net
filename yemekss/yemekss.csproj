@@ -86,6 +86,7 @@
     <Content Include="Tarifoner.aspx" />
     <Content Include="Web.config" />
     <Content Include="KategoriDuzenle.aspx" />
+    <Content Include="Yorumlar.aspx" />
     <Content Include="YemekDuzenle.aspx" />
     <Content Include="Yemekler.aspx" />
     <Content Include="YemekDetay.aspx" />
@@ -169,6 +170,13 @@
     </Compile>
     <Compile Include="KategoriDuzenle.aspx.designer.cs">
       <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="YemekDuzenle.aspx.cs">
       <DependentUpon>YemekDuzenle.aspx</DependentUpon>
