@@ -60,14 +60,14 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Panel ID="Panel3" runat="server">
+    <asp:Panel ID="Panel3" runat="server" BackColor="#FFF2F2">
         <table class="auto-style20">
             <tr>
                 <td class="auto-style27">
                     <asp:ImageButton ID="ImageButton2" runat="server" Height="30px" ImageUrl="~/ikonlar/as.png"  Width="30px" OnClick="ImageButton2_Click1" />
                 </td>
                 <td class="auto-style26">
-                    <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" ImageUrl="~/ikonlar/y.png"  Width="27px" OnClick="ImageButton1_Click" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" ImageUrl="~/ikonlar/y.png"  Width="30px" OnClick="ImageButton1_Click" />
                 </td>
                 <td class="auto-style28">&nbsp;<span class="auto-style29">Yemek Listesi&nbsp;</span></td>
             </tr>

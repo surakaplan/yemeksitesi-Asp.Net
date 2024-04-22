@@ -34,17 +34,19 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="auto-style20" __designer:mapid="284">
-        <tr __designer:mapid="285">
-            <td class="auto-style27" __designer:mapid="286">
+    <asp:Panel ID="Panel2" runat="server" BackColor="#FFF2F2">
+    <table class="auto-style20">
+        <tr>
+            <td class="auto-style27">
                 <asp:ImageButton ID="ImageButton2" runat="server" Height="30px" ImageUrl="~/ikonlar/as.png"  Width="30px" OnClick="ImageButton2_Click"  />
             </td>
-            <td class="auto-style26" __designer:mapid="288">
-                <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" ImageUrl="~/ikonlar/y.png"  Width="27px" OnClick="ImageButton1_Click"  />
+            <td class="auto-style26">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" ImageUrl="~/ikonlar/y.png"  Width="30px" OnClick="ImageButton1_Click"  />
             </td>
-            <td class="auto-style28" __designer:mapid="28a">&nbsp;<span class="auto-style29" __designer:mapid="28b">Yorum Listesi&nbsp;</span></td>
+            <td class="auto-style28">&nbsp;<span class="auto-style29">Onaylanan Yorum Listesi&nbsp;</span></td>
         </tr>
     </table>
+        </asp:Panel>
     <asp:Panel ID="Panel1" runat="server">
         <asp:DataList ID="DataList1" runat="server" Width="442px">
             <ItemTemplate>
@@ -66,5 +68,42 @@
             </ItemTemplate>
         </asp:DataList>
         </asp:Panel>
+    <br />
+    <asp:Panel ID="Panel3" runat="server" BackColor="#FFF2F2">
+    <table class="auto-style20">
+        <tr>
+            <td class="auto-style27">
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="30px" ImageUrl="~/ikonlar/as.png"  Width="30px" OnClick="ImageButton3_Click"   />
+            </td>
+            <td class="auto-style26">
+                <asp:ImageButton ID="ImageButton4" runat="server" Height="30px" ImageUrl="~/ikonlar/y.png"  Width="30px" OnClick="ImageButton4_Click"   />
+            </td>
+            <td class="auto-style28">&nbsp;<span class="auto-style29">Onay Bekleyen Yorum Listesi&nbsp;</span></td>
+        </tr>
+    </table>
+        </asp:Panel>
+    <asp:Panel ID="Panel4" runat="server">
+         <asp:DataList ID="DataList2" runat="server" Width="442px">
+     <ItemTemplate>
+         <table class="auto-style22">
+             <tr>
+                 <td class="auto-style23">
+                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("yorumad") %>'></asp:Label>
+                 </td>
+                 <td class="auto-style19">
+                 <asp:Image ID="Image2" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/delete.png" />
+                 
+                 </td>
+                 <td class="auto-style19">
+                     <a href="YorumDetay.aspx?yorumid=<%#Eval("yorumid")%>">
+                 <asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/update.png" />
+                 </a>
+                 </td>
+             </tr>
+         </table>
+     </ItemTemplate>
+ </asp:DataList>
+    </asp:Panel>
+    <br />
     <br />
 </asp:Content>

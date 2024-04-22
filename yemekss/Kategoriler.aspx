@@ -47,7 +47,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Panel ID="Panel3" runat="server">
+    <asp:Panel ID="Panel3" runat="server" BackColor="#FFF2F2">
         <table class="auto-style20">
             <tr>
                 <td class="auto-style27">
