@@ -52,7 +52,7 @@
                   </td>
                   <td class="auto-style31">
                       
-                  <asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/pngwing.com.png" />
+                <a href="MesajDetay.aspx?mesajid=<%#Eval("mesajid") %>"><asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/pngwing.com.png" />
                   </a>
                   </td>
               </tr>

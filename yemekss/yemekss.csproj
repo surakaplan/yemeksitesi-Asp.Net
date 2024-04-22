@@ -90,6 +90,7 @@
     <Content Include="KategoriDuzenle.aspx" />
     <Content Include="Mesajlar.aspx" />
     <Content Include="GununYemegiAdmin.aspx" />
+    <Content Include="MesajDetay.aspx" />
     <Content Include="YorumDetay.aspx" />
     <Content Include="Yorumlar.aspx" />
     <Content Include="YemekDuzenle.aspx" />
@@ -189,6 +190,13 @@
     </Compile>
     <Compile Include="GununYemegiAdmin.aspx.designer.cs">
       <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.designer.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="YorumDetay.aspx.cs">
       <DependentUpon>YorumDetay.aspx</DependentUpon>
