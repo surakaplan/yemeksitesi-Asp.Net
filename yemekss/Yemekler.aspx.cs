@@ -11,6 +11,9 @@ namespace yemekss
     public partial class WebForm1 : System.Web.UI.Page
     {
         sqlsinif bgl = new sqlsinif();
+
+        string id = "";
+        string islem = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             Panel2.Visible = false;
@@ -18,6 +21,11 @@ namespace yemekss
              
             if(Page.IsPostBack == false)
             {
+
+                id = Request.QueryString["yemekid"];
+                islem = Request.QueryString["islem"];
+
+
                 //Kategori listesi
                 SqlCommand komut2 = new SqlCommand("Select * from kategoriler", bgl.baglanti());
                 SqlDataReader dr2 = komut2.ExecuteReader();
@@ -33,7 +41,16 @@ namespace yemekss
             DataList1.DataSource = dr;
             DataList1.DataBind();
 
-        
+            //SİLME KODU
+
+
+            if (islem == "sil")
+            {
+                SqlCommand komutsil = new SqlCommand("DELETE FROM yemekler where yemekid=@p1", bgl.baglanti());
+                komutsil.Parameters.AddWithValue("@p1", id);
+                komutsil.ExecuteNonQuery();
+                bgl.baglanti().Close();
+            }
 
         }
 
