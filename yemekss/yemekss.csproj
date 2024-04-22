@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Admin.aspx" />
     <Content Include="ikonlar\as.png" />
+    <Content Include="ikonlar\onay.png" />
     <Content Include="ikonlar\pngwing.com.png" />
     <Content Include="ikonlar\y.png" />
     <Content Include="Kategoriler.aspx" />
@@ -88,6 +89,7 @@
     <Content Include="Web.config" />
     <Content Include="KategoriDuzenle.aspx" />
     <Content Include="Mesajlar.aspx" />
+    <Content Include="GununYemegiAdmin.aspx" />
     <Content Include="YorumDetay.aspx" />
     <Content Include="Yorumlar.aspx" />
     <Content Include="YemekDuzenle.aspx" />
@@ -180,6 +182,13 @@
     </Compile>
     <Compile Include="Mesajlar.aspx.designer.cs">
       <DependentUpon>Mesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GununYemegiAdmin.aspx.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GununYemegiAdmin.aspx.designer.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="YorumDetay.aspx.cs">
       <DependentUpon>YorumDetay.aspx</DependentUpon>
