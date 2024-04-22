@@ -17,6 +17,30 @@ namespace yemekss
             SqlDataReader dr = komut.ExecuteReader();
             DataList1.DataSource = dr;
             DataList1.DataBind();
+
+
+            Panel2.Visible = false;
+            Panel4.Visible = false;
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Panel2.Visible = false;
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Panel2.Visible = true;
+        }
+
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        {
+            Panel4.Visible=true;
+        }
+
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
+            Panel4.Visible = false;
         }
     }
 }

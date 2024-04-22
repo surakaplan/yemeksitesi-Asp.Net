@@ -9,37 +9,50 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #07090d;
+        }
         .auto-style1:hover {
             color: #E5E0FF;
     
 }
-        .auto-style5:hover {
+        .auto-style2 {
+            
+             text-align: center;
+            font-weight: bold;
+             background-color: #07090d;
+        }
+        .auto-style3 {
+            width: 135px;
+            color: #E5E0FF;
+            font-weight: normal;
+        }
+         .auto-style5:hover {
         color: #0766AD;
     
 }
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            color: #96B6C5;
-        }
-        .auto-style3 {
+        .auto-style8 {
+            color: #E5E0FF;
             font-weight: normal;
         }
-        .auto-style4 {
-            color: #96B6C5;
-            font-size: medium;
+        .auto-style9 {
+            text-align: center;
             font-weight: normal;
+            background-color: #07090d;
+            color: #E5E0FF;
         }
-        .auto-style5 {
-            width: 700px;
-            height: 300px;
+        .auto-style10 {
+            width: 200px;
+            height: 294px;
+            float: left;
         }
-        .auto-style6 {
-            color: #96B6C5;
-            font-size: medium;
-            font-weight: normal;
-            height: 33px;
+        .auto-style11 {
+            text-align: left;
+            font-weight: bold;
+            background-color: #07090d;
+            color: #E5E0FF;
+            height: 29px;
         }
         </style>
 </head>
@@ -49,36 +62,36 @@
              <asp:Image ID="Image1" runat="server" Height="170px" ImageUrl="~/resimler/h.jpeg" Width="700px" />
         </div>
         <div style="margin-left: 550px; width: 700px; height: 20px;">&nbsp</div>
-         <div style="margin-left: 550px; " class="auto-style5">
-          <div style="width: 200px; height: auto; float: left; background-color:#07090d; margin-left: 0px; text-align: left; font-size: large; font-weight: 700;">
-              <table class="auto-style1" style="border: thin solid #FFFFFF">
+       
+         <div style="margin-left: 550px; width: 700px; height: 300px;">
+          <div style="background-color:#07090d; margin-left: 0px; text-align: left; font-size: large; font-weight: 700;" class="auto-style10">
+               <table class="auto-style1" style="border: thin solid #96B6C5">
                   <tr>
-                      <td class="auto-style2" style="border: thin solid #FFFFFF">MENÜLER</td>
+                      <td class="auto-style11" style="border: thin solid #96B6C5">MENÜLER</td>
                   </tr>
                   <tr>
-                      <td class="auto-style2">&nbsp;</td>
+                      <td class="auto-style9">&nbsp;</td>
                   </tr>
                   <tr>
-                      <td class="auto-style4" style="border-style: solid; border-width: thin"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                      <td class="auto-style3" style="border: thin solid #96B6C5"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
                   </tr>
                   <tr>
-                      <td class="auto-style4" style="border-style: solid; border-width: thin">YEMEKLER</td>
-                  </tr>
-                  <span class="auto-style3">
-                  <tr>
-                      <td class="auto-style4" style="border-style: solid; border-width: thin">YORUMLAR</td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5">YEMEKLER</td>
                   </tr>
                   <tr>
-                      <td class="auto-style4" style="border-style: solid; border-width: thin">MESAJLAR</td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5">YORUMLAR</td>
                   </tr>
                   <tr>
-                      <td class="auto-style6" style="border-style: solid; border-width: thin">GÜNÜN YEMEĞİ</td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5">MESAJLAR</td>
                   </tr>
                   <tr>
-                      <td class="auto-style4" style="border-style: solid; border-width: thin">ÖNERİLER</td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5">GÜNÜN YEMEĞİ</td>
                   </tr>
                   <tr>
-                      <td class="auto-style4" style="border-style: solid; border-width: thin">HAKKIMIZDA</span></td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5">ÖNERİLER</td>
+                  </tr>
+                  <tr>
+                      <td class="auto-style8" style="border: thin solid #96B6C5">HAKKIMIZDA</span></td>
                   </tr>
               </table>
               <br class="auto-style2" />

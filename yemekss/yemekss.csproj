@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="ikonlar\as.png" />
+    <Content Include="ikonlar\y.png" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="AnaSayfa.aspx" />
     <Content Include="GununYemegi.aspx" />
@@ -83,6 +85,7 @@
     <Content Include="StyleSheet2.css" />
     <Content Include="Tarifoner.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="YemekDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +160,13 @@
     </Compile>
     <Compile Include="Tarifoner.aspx.designer.cs">
       <DependentUpon>Tarifoner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="YemekDetay.aspx.cs">
       <DependentUpon>YemekDetay.aspx</DependentUpon>
