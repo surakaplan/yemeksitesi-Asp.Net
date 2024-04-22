@@ -16,19 +16,24 @@ namespace yemekss
             Panel2.Visible = false;
             Panel4.Visible = false;
              
+            if(Page.IsPostBack == false)
+            {
+                //Kategori listesi
+                SqlCommand komut2 = new SqlCommand("Select * from kategoriler", bgl.baglanti());
+                SqlDataReader dr2 = komut2.ExecuteReader();
+
+                DropDownList1.DataTextField = "kategoriad";
+                DropDownList1.DataValueField = "kategoriid";
+                DropDownList1.DataSource = dr2;
+                DropDownList1.DataBind();
+            }
+            //yemek listesi
             SqlCommand komut = new SqlCommand("Select * from yemekler", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             DataList1.DataSource = dr;
             DataList1.DataBind();
 
-         //Kategori listesi
-           SqlCommand komut2 = new SqlCommand("Select * from kategoriler", bgl.baglanti());
-            SqlDataReader dr2 = komut2.ExecuteReader();
-
-            DropDownList1.DataTextField = "kategoriad";
-            DropDownList1.DataValueField = "kategoriid";
-            DropDownList1.DataSource = dr2;
-            DropDownList1.DataBind();
+        
 
         }
 
@@ -50,6 +55,17 @@ namespace yemekss
         protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
         {
             Panel4.Visible = false;
+        }
+
+        protected void BtnEkle1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("InserT Into yemekler (yemekad,yemekmalzeme,yemektarif,kategoriid) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TextBox1.Text);
+            komut.Parameters.AddWithValue("@p2", TextBox2.Text);
+            komut.Parameters.AddWithValue("@p3", TextBox3.Text);
+            komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
         }
     }
 }
