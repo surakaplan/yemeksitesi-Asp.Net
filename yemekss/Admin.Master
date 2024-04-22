@@ -82,7 +82,7 @@
                       <td class="auto-style8" style="border: thin solid #96B6C5"><a href="Yorumlar.aspx">YORUMLAR</a></td>
                   </tr>
                   <tr>
-                      <td class="auto-style8" style="border: thin solid #96B6C5">MESAJLAR</td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5"><a href="Mesajlar.aspx">MESAJLAR</a></td>
                   </tr>
                   <tr>
                       <td class="auto-style8" style="border: thin solid #96B6C5">GÜNÜN YEMEĞİ</td>
