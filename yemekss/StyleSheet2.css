@@ -25,13 +25,13 @@ a:hover {
     box-shadow: 1px 1px 1px #BEE2F9;
     padding: 10px 25px;
     border-radius: 10px;
-    border: 2px solid #0766AD;
+    border: 2px solid #11161f;
     background: #63B8EE;
-    background: linear-gradient(to top, #63B8EE, #E5E0FF);
+    background: linear-gradient(to top, #11161f, #E5E0FF);
 }
 
     .testbutton:hover {
-        color: #0766AD;
-        background: #0766AD;
-        background: linear-gradient(to top, #E5E0FF, #63B8EE);
+        color: #11161f;
+        background: #96B6C5;
+        background: linear-gradient(to top, #E5E0FF, #11161f);
     }

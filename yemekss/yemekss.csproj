@@ -85,7 +85,7 @@
     <Content Include="StyleSheet2.css" />
     <Content Include="Tarifoner.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="KategoriDuzenle.aspx" />
     <Content Include="YemekDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -161,12 +161,12 @@
     <Compile Include="Tarifoner.aspx.designer.cs">
       <DependentUpon>Tarifoner.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
     </Compile>
     <Compile Include="YemekDetay.aspx.cs">
       <DependentUpon>YemekDetay.aspx</DependentUpon>
