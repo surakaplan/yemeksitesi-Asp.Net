@@ -59,6 +59,8 @@ namespace yemekss
 
         protected void BtnEkle1_Click(object sender, EventArgs e)
         {
+
+            //yemek ekleme
             SqlCommand komut = new SqlCommand("InserT Into yemekler (yemekad,yemekmalzeme,yemektarif,kategoriid) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
@@ -66,6 +68,14 @@ namespace yemekss
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
+
+
+            //kategori sayısını attırma
+            SqlCommand komut2 = new SqlCommand("UPDATE kategoriler SET kategoriadet=kategoriadet+1 WHERE kategoriid=@p1",bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", DropDownList1.SelectedValue);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
         }
     }
 }
