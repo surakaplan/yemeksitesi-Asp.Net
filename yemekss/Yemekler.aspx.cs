@@ -20,9 +20,17 @@ namespace yemekss
             SqlDataReader dr = komut.ExecuteReader();
             DataList1.DataSource = dr;
             DataList1.DataBind();
-        }
 
-        
+         //Kategori listesi
+           SqlCommand komut2 = new SqlCommand("Select * from kategoriler", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+
+            DropDownList1.DataTextField = "kategoriad";
+            DropDownList1.DataValueField = "kategoriid";
+            DropDownList1.DataSource = dr2;
+            DropDownList1.DataBind();
+
+        }
 
         protected void ImageButton2_Click1(object sender, ImageClickEventArgs e)
         {

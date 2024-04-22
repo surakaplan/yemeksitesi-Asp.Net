@@ -36,15 +36,26 @@
         .auto-style29 {
             font-size: large;
         }
-        .auto-style30 {
-            width: 179px;
-        }
-        .auto-style31 {
-            width: 179px;
-            height: 33px;
-        }
         .auto-style32 {
             height: 33px;
+        }
+    .auto-style33 {
+        width: 140px;
+        height: 24px;
+    }
+    .auto-style34 {
+        height: 24px;
+    }
+    .auto-style35 {
+        width: 140px;
+    }
+    .auto-style36 {
+        width: 140px;
+        height: 33px;
+    }
+        .auto-style37 {
+            height: 33px;
+            text-align: center;
         }
     </style>
 </asp:Content>
@@ -100,26 +111,47 @@
     <asp:Panel ID="Panel4" runat="server">
         <table class="auto-style20">
             <tr>
-                <td class="auto-style30">&nbsp;</td>
+                <td class="auto-style35">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style30">Yemek Ad</td>
+                <td class="auto-style35">Yemek Ad:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="24px" Width="280px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style30">Kategori İkon</td>
-                <td>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                <td class="auto-style33">&nbsp;Malzemeler:</td>
+                <td class="auto-style34">
+                    <asp:TextBox ID="TextBox2" runat="server" Height="75px" TextMode="MultiLine" Width="280px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style31"></td>
+                <td class="auto-style36">Yemek Tarif:</td>
                 <td class="auto-style32">
-                    <asp:Button ID="BtnEkle" runat="server" Text="Ekle" Width="80px"  />
+                    <asp:TextBox ID="TextBox3" runat="server" Height="180px" TextMode="MultiLine" Width="280px"></asp:TextBox>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style36">Kategori:</td>
+                <td class="auto-style32">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="28px" Width="200px">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style36">&nbsp;</td>
+                <td class="auto-style37">
+                    <asp:Button ID="BtnEkle1" runat="server" CssClass="testbutton" Text="Ekle" Width="80px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style36">&nbsp;</td>
+                <td class="auto-style37">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style36">&nbsp;</td>
+                <td class="auto-style37">&nbsp;</td>
             </tr>
         </table>
     </asp:Panel>

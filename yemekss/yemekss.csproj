@@ -82,7 +82,7 @@
     <Content Include="resimler\h.jpeg" />
     <Content Include="resimler\header.png" />
     <Content Include="resimler\makaron.jpeg" />
-    <Content Include="StyleSheet2.css" />
+    <Content Include="StyleSheet3.css" />
     <Content Include="Tarifoner.aspx" />
     <Content Include="Web.config" />
     <Content Include="KategoriDuzenle.aspx" />
