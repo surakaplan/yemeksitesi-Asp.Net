@@ -55,7 +55,7 @@
             <tr>
                 <td class="auto-style16"></td>
                 <td class="auto-style17">
-                    <asp:Button ID="Button1" runat="server" CssClass="testbutton" Text="Onayla" />
+                    <asp:Button ID="Button1" runat="server" CssClass="testbutton" Text="Onayla" OnClick="Button1_Click" />
                 </td>
             </tr>
             <tr>
@@ -66,6 +66,6 @@
             </tr>
         </table>
     </p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
     <br />
 </asp:Content>

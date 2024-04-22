@@ -60,6 +60,7 @@
                         
                         </td>
                         <td class="auto-style19">
+                            <a href="YorumDetay.aspx?yorumid=<%#Eval("yorumid")%>">
                         <asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/update.png" />
                         </a>
                         </td>

@@ -16,6 +16,8 @@ namespace yemekss
         {
             id = Request.QueryString["Yorumid"];
 
+            if(Page.IsPostBack == false) { 
+
             SqlCommand komut = new SqlCommand("Select yorumad,yorummail,yorumicerik,yemekAd From yorumlar" +
                 " inner join yemekler on yorumlar.yemekid=yemekler.yemekid where yorumid=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", id);
@@ -27,6 +29,17 @@ namespace yemekss
                 TextBox3.Text = dr[2].ToString();
                 TextBox4.Text = dr[3].ToString();
             }
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("UPDATE yorumlar set yorumicerik=@p1, yorumonay=@p2 where yorumid=@p3 ", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TextBox3.Text);
+            komut.Parameters.AddWithValue("@p2", "True");
+            komut.Parameters.AddWithValue("@p3", id);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
         }
     }
 }
