@@ -71,7 +71,7 @@
          <td class="auto-style26">
              <asp:ImageButton ID="ImageButton4" runat="server" Height="30px" ImageUrl="~/ikonlar/y.png"  Width="30px" OnClick="ImageButton4_Click" />
          </td>
-         <td class="auto-style28">&nbsp;<span class="auto-style29">OnayTarif Listesi&nbsp;</span></td>
+         <td class="auto-style28">&nbsp;<span class="auto-style29">Onaylanmış Tarif Listesi&nbsp;</span></td>
      </tr>
  </table>
     </asp:Panel>

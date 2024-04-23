@@ -94,6 +94,7 @@
     <Content Include="MesajDetay.aspx" />
     <Content Include="Tarifler.aspx" />
     <Content Include="TariflerDetay.aspx" />
+    <Content Include="HakkimizdaDuzen.aspx" />
     <Content Include="YorumDetay.aspx" />
     <Content Include="Yorumlar.aspx" />
     <Content Include="YemekDuzenle.aspx" />
@@ -214,6 +215,13 @@
     </Compile>
     <Compile Include="TariflerDetay.aspx.designer.cs">
       <DependentUpon>TariflerDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HakkimizdaDuzen.aspx.cs">
+      <DependentUpon>HakkimizdaDuzen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HakkimizdaDuzen.aspx.designer.cs">
+      <DependentUpon>HakkimizdaDuzen.aspx</DependentUpon>
     </Compile>
     <Compile Include="YorumDetay.aspx.cs">
       <DependentUpon>YorumDetay.aspx</DependentUpon>
