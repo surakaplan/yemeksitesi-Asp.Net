@@ -56,5 +56,20 @@ namespace yemekss
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //tüm yemeklerin durumunu false yapar
+            SqlCommand komut = new SqlCommand("UPDATE yemekler set durum=0", bgl.baglanti());
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+            // günün yemegini true yap
+            SqlCommand komut2 = new SqlCommand("UPDATE yemekler set durum=1 where yemekid=@p1", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", id);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+        }
     }
 }

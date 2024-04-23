@@ -24,7 +24,7 @@
     }
         .auto-style37 {
             height: 33px;
-            text-align: center;
+            text-align: left;
         }
     </style>
 </asp:Content>
@@ -64,6 +64,7 @@
                 <td class="auto-style36" __designer:mapid="241">&nbsp;</td>
                 <td class="auto-style37" __designer:mapid="242">
                     <asp:Button ID="BtnEkle1" runat="server" CssClass="testbutton" Text="Güncelle" Width="111px" OnClick="BtnEkle1_Click" />
+                    <asp:Button ID="Button1" runat="server" CssClass="testbutton" OnClick="Button1_Click" Text="Günün Yemeği Seç" Width="183px" />
                 </td>
             </tr>
         </table>
