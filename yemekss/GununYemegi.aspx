@@ -24,7 +24,7 @@
                             <strong>Tarif:</strong><br />
                             <asp:Label ID="Label5" runat="server" Text='<%# Eval("yemektarif") %>'></asp:Label>
                             <br />
-                            <asp:Image ID="Image1" runat="server" Height="230px" ImageUrl="~/resimler/makaron.jpeg" style="text-align: justify" Width="415px" />
+                            <asp:Image ID="Image1" runat="server" Height="230px" ImageUrl='<%# Eval("yemekresim") %>' style="text-align: justify" Width="415px" />
                         </td>
                     </tr>
                     <tr>

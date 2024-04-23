@@ -53,6 +53,12 @@
                     <asp:TextBox ID="TextBox3" runat="server" Height="180px" TextMode="MultiLine" Width="280px"></asp:TextBox>
                 </td>
             </tr>
+            <tr __designer:mapid="238">
+                <td class="auto-style36" __designer:mapid="239">Resim:</td>
+                <td class="auto-style32" __designer:mapid="23a">
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                </td>
+            </tr>
             <tr __designer:mapid="23c">
                 <td class="auto-style36" __designer:mapid="23d">Kategori:</td>
                 <td class="auto-style32" __designer:mapid="23e">
