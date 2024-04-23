@@ -93,6 +93,7 @@
     <Content Include="GununYemegiAdmin.aspx" />
     <Content Include="MesajDetay.aspx" />
     <Content Include="Tarifler.aspx" />
+    <Content Include="TariflerDetay.aspx" />
     <Content Include="YorumDetay.aspx" />
     <Content Include="Yorumlar.aspx" />
     <Content Include="YemekDuzenle.aspx" />
@@ -206,6 +207,13 @@
     </Compile>
     <Compile Include="Tarifler.aspx.designer.cs">
       <DependentUpon>Tarifler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TariflerDetay.aspx.cs">
+      <DependentUpon>TariflerDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TariflerDetay.aspx.designer.cs">
+      <DependentUpon>TariflerDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="YorumDetay.aspx.cs">
       <DependentUpon>YorumDetay.aspx</DependentUpon>

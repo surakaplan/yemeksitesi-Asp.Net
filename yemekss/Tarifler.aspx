@@ -54,7 +54,7 @@
                   </td>
                   <td class="auto-style31">
                       
-                <asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/oneri.png" />
+               <a href="TariflerDetay.aspx?tarifid=<%#Eval("tarifid") %>"><asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/ikonlar/oneri.png" />
                   </a>
                   </td>
               </tr>
