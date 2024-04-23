@@ -95,6 +95,7 @@
             </tr>
         </table>
     </asp:Panel>
+    <br />
     <asp:Panel ID="Panel4" runat="server">
         <table class="auto-style20">
             <tr>
@@ -118,6 +119,10 @@
                 <td class="auto-style32">
                     <asp:Button ID="BtnEkle" runat="server" Text="Ekle" Width="80px" OnClick="BtnEkle_Click" />
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style31">&nbsp;</td>
+                <td class="auto-style32">&nbsp;</td>
             </tr>
         </table>
     </asp:Panel>

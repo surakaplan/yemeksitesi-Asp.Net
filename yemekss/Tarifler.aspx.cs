@@ -14,11 +14,17 @@ namespace yemekss
         protected void Page_Load(object sender, EventArgs e)
         {
             Panel1.Visible = false;
+            Panel4.Visible = false;
 
-            SqlCommand komut = new SqlCommand("select * from tarif ", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("select * from tarif where tarifdurum=0", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             DataList1.DataSource = dr;
             DataList1.DataBind();
+
+            SqlCommand komut2 = new SqlCommand("select * from tarif where tarifdurum=1", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            DataList2.DataSource = dr2;
+            DataList2.DataBind();
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
@@ -29,6 +35,16 @@ namespace yemekss
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
             Panel1.Visible = false;
+        }
+
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        {
+            Panel4.Visible = true;
+        }
+
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
+            Panel4.Visible = false;
         }
     }
 }

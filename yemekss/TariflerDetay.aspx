@@ -3,7 +3,7 @@
     <style type="text/css">
 
          .auto-style12 {
-            width: 175px;
+            width: 191px;
             font-size: large;
             color: #07090D;
         }
@@ -13,26 +13,24 @@
         .auto-style6 {
             width: 100%;
         }
-        .auto-style13 {
-            text-align: left;
-           
-            background-color: #FFF2F2;
-            
-            height: 29px;
-        }
-        .auto-style14 {
-            text-align: left;
-            background-color: #FFF2F2;
-            height: 29px;
-        }
         .auto-style15 {
             margin-left: 40px;
         }
         .auto-style16 {
             width: 100%;
         }
-        .auto-style17 {
-            width: 161px;
+        .auto-style18 {
+            color: #000000;
+            font-size: large;
+        }
+        .auto-style19 {
+            width: 191px;
+        }
+        .auto-style20 {
+            margin-left: 0px;
+        }
+        .auto-style21 {
+            width: 192px;
         }
     </style>
 </asp:Content>
@@ -42,49 +40,58 @@
         <tr>
             <td class="auto-style12">Tarif Ad:</td>
             <td>
-                <asp:TextBox ID="TxtTarifAd" runat="server" Width="250px" CssClass="auto-style14"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
             </td>
         </tr>
+         <tr>
+            <td class="auto-style19">
+                <br />
+&nbsp;<span class="auto-style18">Kategori:</span></td>
+            <td>
+                <asp:DropDownList ID="DropDownList1" runat="server" Height="24px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="186px">
+                </asp:DropDownList>
+             </td>
+         </tr>
         <tr>
             <td class="auto-style12">Malzemeler:</td>
             <td>
-                <asp:TextBox ID="TxtMalzemeler" runat="server" Height="80px" TextMode="MultiLine" Width="250px" CssClass="auto-style13"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="107px" TextMode="MultiLine" Width="200px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style12">Yapılış:</td>
             <td>
-                <asp:TextBox ID="TxtYapilis" runat="server" Height="150px" Width="250px" CssClass="auto-style14" TextMode="MultiLine"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Height="157px" TextMode="MultiLine" Width="200px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style12">Resim:</td>
             <td>
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="auto-style20" Width="234px" />
             </td>
         </tr>
         <tr>
             <td class="auto-style12">Tarif Öneren:</td>
             <td>
-                <asp:TextBox ID="TxtTarifOneren" runat="server" OnTextChanged="TextBox4_TextChanged" Width="250px" CssClass="auto-style14"></asp:TextBox>
+                <asp:TextBox ID="TextBox4" runat="server" Width="200px"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="auto-style12">Tarif Öneren Mail</td>
+            <td class="auto-style12">Tarif Öneren Mail:</td>
             <td class="auto-style15">
-                <asp:TextBox ID="TxtOnerenmail" runat="server" OnTextChanged="TextBox4_TextChanged" Width="250px" CssClass="auto-style14"></asp:TextBox>
+                <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
             </td>
         </tr>
     </table>
     <table class="auto-style16">
         <tr>
-            <td class="auto-style17">&nbsp;</td>
+            <td class="auto-style21">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" CssClass="testbutton" Height="47px" Text="Onayla" Width="106px" />
+                <asp:Button ID="Button1" runat="server" CssClass="testbutton" Height="47px" Text="Onayla" Width="106px" OnClick="Button1_Click" />
                 </td>
         </tr>
         <tr>
-            <td class="auto-style17">&nbsp;</td>
+            <td class="auto-style21">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
     </table>
