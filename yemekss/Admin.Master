@@ -88,10 +88,10 @@
                       <td class="auto-style8" style="border: thin solid #96B6C5"><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
                   </tr>
                   <tr>
-                      <td class="auto-style8" style="border: thin solid #96B6C5">ÖNERİLER</td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5"><a href="Tarifler.aspx">TARİFLER</a></td>
                   </tr>
                   <tr>
-                      <td class="auto-style8" style="border: thin solid #96B6C5">HAKKIMIZDA</span></td>
+                      <td class="auto-style8" style="border: thin solid #96B6C5"><a href="HakkımızdaDuzen.aspx">HAKKIMIZDA</a></td>
                   </tr>
               </table>
               <br class="auto-style2" />
